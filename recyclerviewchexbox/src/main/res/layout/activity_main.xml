@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context="com.sanfeng.hotelbutler.recyclerviewchexbox.MainActivity">
+
+   <Button
+       android:id="@+id/selctall"
+       android:layout_width="80dp"
+       android:layout_height="40dp"
+
+       android:text="全选"
+       android:gravity="center"
+       />
+    <Button
+        android:id="@+id/allnoselct"
+        android:layout_marginLeft="40dp"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="全不选"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/selctall"
+        />
+  <android.support.v7.widget.RecyclerView
+      android:layout_below="@id/selctall"
+      android:id="@+id/myRecy"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+
+      >
+
+  </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/myRecy"
+        android:text="提交"
+        />
+</RelativeLayout>
